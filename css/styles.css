@@ -1,0 +1,504 @@
+/*........................... Global CSS......................... */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/*........................... home section CSS......................... */
+#home{
+    height: 100vh;
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#home .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#home .navigationBar{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 15px; */
+    flex-flow: row wrap;
+    align-items: flex-end;
+}
+#home .navigationBar .logoname h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    color:white;
+}
+#home .navbar nav ul li{
+    display: inline-flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin-right: 15px;
+}
+#home .navbar nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+#home .row {
+	/* display: flex; */
+    height: 80vh;
+}
+#home .col {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+    align-items: center;
+    color:white;
+}
+#home .slider-content {
+	width: 400px;
+}
+
+
+#home .welcome-title {
+	margin: 20px 0px;
+	letter-spacing: 1px;
+    padding: 0px 10px;
+}
+
+#home h2 { 
+    font-size: 50px;
+
+}
+#home .title-name {
+	font-size: 40px;
+}
+.btn-parent{
+    padding: 8px 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+    /* border: 1px solid; */
+    height: 100px;
+}
+#home .btn-primary {
+	color: #333;
+	background-color: green;
+	border-color:green;
+}
+#home .btn-primary:hover {
+	color: #fff;
+	background-color: red;
+	border-color: red;
+}
+#home.btn-primary:focus {
+	color: #fff;
+	background-color:gray;
+	border-color: gray;
+	outline: none;
+	cursor: pointer;
+}
+/* about section start here */
+#about{
+    padding: 100px 0px;
+}
+#about .row .col{
+    display: flex;
+    flex: 1;
+
+}
+#about .row .col h3{
+    padding: 0px 10px;
+}
+#about .row .col .about-me{
+    margin:0px 40px;
+}
+#about .about-me img{
+    width: 500px;
+    border: 1px solid rgb(207, 29, 29);
+    border-radius: 10px;
+    padding: 2px;
+}
+#about .row .col .about-contant{
+    padding: 20px;
+}
+#about .row .col .about-contant h2{
+    padding: 0px 10px;
+    text-transform: capitalize;
+}
+#about .row .col .about-contant h3{
+    padding: 10px 10px;
+    text-transform: capitalize;
+}
+#about .about-contant h3 span{
+    color: tomato;
+    font-weight: 500;
+}
+#about .row .col .about-contant p{
+    padding: 10px 10px;
+    letter-spacing: 1px;
+}
+#about .socia-icons{
+    padding: 20px 10px 0px;
+}
+#about .socia-icons a{
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;    
+}
+#about .socia-icons a:hover{
+    background-color: darkgoldenrod;
+    color: white;
+    border: 1px solid crimson;
+}
+/* service section start here */
+#services{
+    background-color: blanchedalmond;
+}
+#services .contant-part{
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+    padding-bottom: 90px;
+}
+#services .contant-part h2{
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#services .boxes{
+    border-radius: 8px;
+    border: 2px solid green;
+    margin: 15px;
+    /* width: 30%; */
+}
+#services .boxes:hover{
+    background-color: rgb(86, 134, 86);
+    color: white;
+}
+#services .boxes-models{
+    padding: 10px;
+    text-align: center;
+}
+#services .boxes-models h3{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding-bottom: 20px ;
+  
+
+}
+#services .line{
+    width: 10%;
+    border-width: 3px;
+    margin: 0px auto;
+    border: 2px solid crimson;
+}
+#services .boxes .boxes-models p{
+    padding-top: 20px;
+}
+
+#services i{
+    margin: 30px;
+
+}
+#services .row{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+
+}
+.sec-pv {
+    padding: 100px 0px;
+}
+#freelancer{
+    background-color: lightgrey;
+
+}
+#freelancer .available{
+    text-align: center;
+    margin: 0px auto;
+    padding: 90px;
+    
+}
+#freelancer .available h3{
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+#freelancer .available button{
+    font-size: 20px;
+    /* color: #333; */
+	background-color: rgb(31, 221, 158);
+    border-color:red;
+    width: 120px;
+    height: 40px;
+}
+#freelancer .available button:hover{
+    background-color: rgb(43, 11, 184);
+    color: white;
+    border: 1px solid crimson;
+    
+}
+#client{
+    background-color: #ddd;
+}
+#client .our-client{
+    text-align: center;
+    margin: 0px auto;
+    padding: 90px;
+}
+#client .our-client h2{
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#client .our-client p{
+    padding-bottom: 100px;
+}
+#client .our-client .icon i{
+    display: block;
+    text-align: center;
+    margin: 20px;
+    color: red;
+    
+}
+#client .our-client .myimg img{
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 100px;
+    border: 2px solid white;
+}
+#client .our-client .myimg p{
+    padding-top: 40px;
+}
+
+#our-works .works{
+    text-align: center;
+    margin: 0px auto;
+    padding: 90px;
+}
+#our-works .works h2{
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize; 
+}
+#our-works .work-nav{
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+#our-works .work-nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    
+}
+#our-works .work-nav ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10%;
+}
+#our-works .work-nav ul a:hover{
+    background-color: red;
+    color: green;
+}
+/*......................... hover effect */
+#our-works .my-profile{
+    display: flex;
+    justify-content: space-evenly;
+}
+#our-works .my-profile .box{
+    overflow: hidden;
+    position: relative;
+    margin: 15px;
+    
+}
+#our-works .my-profile .box img{
+    width: 360px;
+    height: 260px;
+    border-radius: 5px;
+}
+#our-works .box:before,
+#our-works .box:after{
+    content: "";
+    background: #34495e;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    transition: all 0.35s 0s ease-out;
+}
+#our-works .box:hover:before{ bottom: 0; }
+#our-works .box:after{
+    opacity: 0.8;
+    bottom: 0;
+    top: 100%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transition: all 0.35s 0.2s ease-in;
+}
+#our-works .box:hover:after{ top: 25%; }
+#our-works .box img{
+    width: 100%;
+    height: auto;
+}
+#our-works .box .box-content{
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-55%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transition: all 0.35s 0.5s ease;
+}
+#our-works .box:hover .box-content{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-40%);
+}
+#our-works .box .title{
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+#our-works .box .title:after{
+    content: '';
+    height: 1px;
+    width: 100px;
+    margin: 5px auto 3px;
+    border-bottom: 1px dashed #fff;
+    display: block;
+    clear: both;
+}
+#our-works .box .post{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+#our-works .box .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    z-index: 2;
+}
+#our-works .box .icon li{
+    margin: 0 3px;
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.4s ease 0.5s;
+}
+#our-works .box .icon li:nth-child(2){ transition-delay: 0.7s; }
+#our-works .box:hover .icon li{ opacity: 1; }
+#our-works .box .icon li a{
+    color: #333;
+    background-color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 31px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+#our-works .box .icon li a:hover{ box-shadow: 3px 3px rgba(255,255,255,0.5); }
+@media only screen and (max-width:990px){
+    #our-works .box{ margin: 0 0 30px; }
+}
+/*   end here */
+
+
+#blog .blog-conant{
+    text-align: center;
+    margin: 0px auto;
+    padding: 90px;
+}
+#blog .blog-conant h2{
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+#blog .sub-blog h3{
+    padding: 10px 0px;
+    font-size: 23px;
+    text-transform: capitalize;
+
+}
+#blog .sub-blog h5{
+    padding: 10px 0px;
+    font-size: 15px;
+}
+#blog .sub-blog h5 span{
+    color: coral;
+
+}
+#blog .sub-blog p{
+    padding: 10px 0px;
+    font-size: 15px;
+    /* width: 35%; */
+}
+#blog .row{
+    display: flex;
+    justify-content: space-evenly;
+    } 
+    
+    
+#blog .contantt img{
+    margin: auto;
+    width: 350px;
+    height: 260px;
+    border-radius: 10px;
+    
+}
+#contact .contact-info{
+    text-align: center;
+    margin: 0px auto;
+    padding: 90px;
+}
+#contact .contact-info h2{
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+#contact .row{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+#contact .contact-box{
+    margin: 40px 0px;
+}
+#contact .contact-box .contact-icon i{
+    color: blueviolet;
+}
+#contact .contact-box h3{
+    padding: 20px 0px 5px;
+    text-transform: capitalize;
+}
