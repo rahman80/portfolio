@@ -12,20 +12,21 @@
 /*........................... home section CSS......................... */
 #home{
     height: 100vh;
-    background-image: url(../img/2.jpg);
+    background-image:
+    linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../img/2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
-#home .overlay{
+/* #home .overlay{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+    background-color: rgba(0, 0, 0, 0.5); */
+/* } */
 #home .navigationBar{
     display: flex;
     justify-content: space-between;
@@ -63,7 +64,9 @@
     color:white;
 }
 #home .slider-content {
-	width: 400px;
+    width: 600px;
+    text-align: center;
+
 }
 
 
@@ -73,15 +76,22 @@
     padding: 0px 10px;
 }
 
-#home h2 { 
+#home p { 
+    padding: 20px;
+
+}
+#home h1 { 
     font-size: 50px;
 
 }
 #home .title-name {
-	font-size: 40px;
+    font-size: 30px;
+    padding: 20px 0px;
+    
+
 }
 .btn-parent{
-    padding: 8px 12px;
+    padding: 15px 12px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
     /* border: 1px solid; */
@@ -192,8 +202,6 @@
     letter-spacing: 1px;
     text-transform: capitalize;
     padding-bottom: 20px ;
-  
-
 }
 #services .line{
     width: 10%;
@@ -494,11 +502,94 @@
 }
 #contact .contact-box{
     margin: 40px 0px;
+    padding-bottom: 20px;
 }
 #contact .contact-box .contact-icon i{
     color: blueviolet;
+
 }
 #contact .contact-box h3{
     padding: 20px 0px 5px;
     text-transform: capitalize;
+}
+@media(max-width:990px){
+    #home .col{
+        width: 50%;
+        padding-bottom: 60%;
+    }
+    .row{
+        display: flex;
+        flex-flow: column row;
+    }
+    #home .slider-content{
+        width: 100%;
+        padding:auto 0px;
+        margin: auto 0px;
+    }
+    #about .about-me{
+        display: flex;
+        flex-flow: column wrap;
+    
+        }
+
+        #services .row{
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+        #services .boxes .boxes-models{
+            width: 100%;
+            padding:auto 0px;
+            margin: auto 0px;
+
+        }
+        #our-works .my-profile{
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+        #our-works .box{
+            width: 100%;
+            padding:auto 0px;
+            margin: auto 0px;
+
+        }
+        #blog .row{
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+        #blog .col{
+            width: 100%;
+            padding:auto 0px;
+            margin: auto 0px;
+
+        }
+        #contact .row{
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+        #contact .contact-box{
+            width: 100%;
+            padding:auto 0px;
+            margin: auto 0px;
+
+        }
+        #about .col{
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+        #about .about-me img{
+            width: 100%;
+        }
+        #about .about-contant{
+            width: 100%;
+            padding:auto 0px;
+            margin: auto 0px;
+
+        }
+        
+
 }
