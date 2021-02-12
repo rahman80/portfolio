@@ -9,6 +9,20 @@
     width: 80%;
     margin: 0 auto;
 }
+/*........................... Helper Class......................... */
+.btn{
+    background-color: black;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+.btn:hover {
+	color: #fff;
+	background-color: red;
+	border-color: red;
+}
 /*........................... home section CSS......................... */
 #home{
     height: 100vh;
@@ -90,23 +104,12 @@
     
 
 }
-.btn-parent{
-    padding: 15px 12px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-    /* border: 1px solid; */
-    height: 100px;
-}
-#home .btn-primary {
+/* #home .btn-primary {
 	color: #333;
 	background-color: green;
 	border-color:green;
-}
-#home .btn-primary:hover {
-	color: #fff;
-	background-color: red;
-	border-color: red;
-}
+} */
+
 #home.btn-primary:focus {
 	color: #fff;
 	background-color:gray;
@@ -240,14 +243,14 @@
     padding-bottom: 40px;
     font-size: 40px;
 }
-#freelancer .available button{
+/* #freelancer .available button{
     font-size: 20px;
     /* color: #333; */
 	background-color: rgb(31, 221, 158);
     border-color:red;
     width: 120px;
     height: 40px;
-}
+} */
 #freelancer .available button:hover{
     background-color: rgb(43, 11, 184);
     color: white;
@@ -454,13 +457,11 @@
     text-transform: capitalize;
 
 }
-#blog .sub-blog h5{
+#blog .sub-blog a{
+    text-decoration: none;
     padding: 10px 0px;
     font-size: 15px;
-}
-#blog .sub-blog h5 span{
-    color: coral;
-
+    color: gray;
 }
 #blog .sub-blog p{
     padding: 10px 0px;
@@ -477,8 +478,17 @@
     margin: auto;
     width: 350px;
     height: 260px;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
+}
+#blog .sub-blog a{
+    text-decoration: none;
+    color: grey;
+}
+#blog .sub-blog a:hover{
+    color: crimson;
+}
+#contact{
+    padding: 60px 0px;
 }
 #contact .contact-info{
     text-align: center;
@@ -492,7 +502,7 @@
     text-transform: capitalize;
 
 }
-#contact .row{
+#contact .box{
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -512,6 +522,29 @@
     padding: 20px 0px 5px;
     text-transform: capitalize;
 }
+
+#contact form{
+    display: block;
+}
+#contact form input{
+    width: 535px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+#contact form .subject-name{
+    width: 100%;
+}
+#contact form textarea{
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: 20px 0px;
+
+}
+
+
 @media(max-width:990px){
     #home .col{
         width: 50%;
