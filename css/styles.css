@@ -12,7 +12,7 @@
 /*........................... Helper Class......................... */
 .btn{
     background-color: black;
-    padding: 10px 25px;
+    padding: 15px 25px;
     border-radius: 20px;
     color: white;
     border: 1px solid white;
@@ -32,15 +32,6 @@
     background-repeat: no-repeat;
     position: relative;
 }
-
-/* #home .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); */
-/* } */
 #home .navigationBar{
     display: flex;
     justify-content: space-between;
@@ -64,10 +55,7 @@
     color: white;
     text-transform: capitalize;
 }
-
-
 #home .row {
-	/* display: flex; */
     height: 80vh;
 }
 #home .col {
@@ -80,36 +68,23 @@
 #home .slider-content {
     width: 600px;
     text-align: center;
-
 }
-
-
 #home .welcome-title {
 	margin: 20px 0px;
 	letter-spacing: 1px;
     padding: 0px 10px;
 }
-
 #home p { 
     padding: 20px;
 
 }
 #home h1 { 
     font-size: 50px;
-
 }
 #home .title-name {
     font-size: 30px;
     padding: 20px 0px;
-    
-
 }
-/* #home .btn-primary {
-	color: #333;
-	background-color: green;
-	border-color:green;
-} */
-
 #home.btn-primary:focus {
 	color: #fff;
 	background-color:gray;
@@ -117,14 +92,13 @@
 	outline: none;
 	cursor: pointer;
 }
-/* about section start here */
+/* ........about section start here......... */
 #about{
     padding: 100px 0px;
 }
 #about .row .col{
     display: flex;
     flex: 1;
-
 }
 #about .row .col h3{
     padding: 0px 10px;
@@ -149,7 +123,8 @@
     padding: 10px 10px;
     text-transform: capitalize;
 }
-#about .about-contant h3 span{
+#about .about-contant h3 a{
+    text-decoration: none;
     color: tomato;
     font-weight: 500;
 }
@@ -171,7 +146,7 @@
     color: white;
     border: 1px solid crimson;
 }
-/* service section start here */
+/*........... service section start here ......*/
 #services{
     background-color: blanchedalmond;
 }
@@ -218,20 +193,15 @@
 
 #services i{
     margin: 30px;
-
 }
 #services .row{
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-
 }
 .sec-pv {
     padding: 100px 0px;
 }
 #freelancer{
     background-color: lightgrey;
-
 }
 #freelancer .available{
     text-align: center;
@@ -243,20 +213,7 @@
     padding-bottom: 40px;
     font-size: 40px;
 }
-/* #freelancer .available button{
-    font-size: 20px;
-    /* color: #333; */
-	background-color: rgb(31, 221, 158);
-    border-color:red;
-    width: 120px;
-    height: 40px;
-} */
-#freelancer .available button:hover{
-    background-color: rgb(43, 11, 184);
-    color: white;
-    border: 1px solid crimson;
-    
-}
+/* ...........................Client section starts here...... */
 #client{
     background-color: #ddd;
 }
@@ -278,8 +235,7 @@
     display: block;
     text-align: center;
     margin: 20px;
-    color: red;
-    
+    color: red;  
 }
 #client .our-client .myimg img{
     margin: 0 auto;
@@ -290,7 +246,6 @@
 #client .our-client .myimg p{
     padding-top: 40px;
 }
-
 #our-works .works{
     text-align: center;
     margin: 0px auto;
@@ -310,19 +265,19 @@
 #our-works .work-nav ul{
     display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;   
 }
 #our-works .work-nav ul a{
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 10%;
+    color: black;
 }
 #our-works .work-nav ul a:hover{
-    background-color: red;
+    background-color:rgb(255, 187, 0);
     color: green;
 }
-/*......................... hover effect */
+/*......................... hover effect...... */
 #our-works .my-profile{
     display: flex;
     justify-content: space-evenly;
@@ -330,8 +285,7 @@
 #our-works .my-profile .box{
     overflow: hidden;
     position: relative;
-    margin: 15px;
-    
+    margin: 15px;  
 }
 #our-works .my-profile .box img{
     width: 360px;
@@ -437,7 +391,7 @@
     #our-works .box{ margin: 0 0 30px; }
 }
 /*   end here */
-
+/* ...............Blog section stars here....... */
 
 #blog .blog-conant{
     text-align: center;
@@ -449,13 +403,11 @@
     font-size: 40px;
     font-weight: 500;
     text-transform: capitalize;
-
 }
 #blog .sub-blog h3{
     padding: 10px 0px;
     font-size: 23px;
     text-transform: capitalize;
-
 }
 #blog .sub-blog a{
     text-decoration: none;
@@ -466,14 +418,11 @@
 #blog .sub-blog p{
     padding: 10px 0px;
     font-size: 15px;
-    /* width: 35%; */
 }
 #blog .row{
     display: flex;
     justify-content: space-evenly;
-    } 
-    
-    
+}    
 #blog .contantt img{
     margin: auto;
     width: 350px;
@@ -508,23 +457,32 @@
     width: 90%;
     margin: 0 auto;
     text-align: center;
-
 }
 #contact .contact-box{
     margin: 40px 0px;
     padding-bottom: 20px;
 }
-#contact .contact-box .contact-icon i{
-    color: blueviolet;
+#contact .contact-box .contact-icon .mobile{
+    color: cadetblue;
+
+}
+#contact .contact-box .contact-icon .mail{
+    color: peru;
+
+}
+#contact .contact-box .contact-icon .map{
+    color: darkgreen;
 
 }
 #contact .contact-box h3{
     padding: 20px 0px 5px;
     text-transform: capitalize;
 }
-
 #contact form{
     display: block;
+}
+#contact .submit-form{
+    text-align: end;
 }
 #contact form input{
     width: 535px;
@@ -541,10 +499,9 @@
     border: 2px solid gray;
     border-radius: 20px;
     margin: 20px 0px;
-
 }
 
-
+/* ..................Media queries section........ */
 @media(max-width:990px){
     #home .col{
         width: 50%;
@@ -562,67 +519,62 @@
     #about .about-me{
         display: flex;
         flex-flow: column wrap;
-    
-        }
-
-        #services .row{
-            display: flex;
-            flex-flow: column wrap;
-
-        }
-        #services .boxes .boxes-models{
-            width: 100%;
-            padding:auto 0px;
-            margin: auto 0px;
-
-        }
-        #our-works .my-profile{
-            display: flex;
-            flex-flow: column wrap;
-
-        }
-        #our-works .box{
-            width: 100%;
-            padding:auto 0px;
-            margin: auto 0px;
-
-        }
-        #blog .row{
-            display: flex;
-            flex-flow: column wrap;
-
-        }
-        #blog .col{
-            width: 100%;
-            padding:auto 0px;
-            margin: auto 0px;
-
-        }
-        #contact .row{
-            display: flex;
-            flex-flow: column wrap;
-
-        }
-        #contact .contact-box{
-            width: 100%;
-            padding:auto 0px;
-            margin: auto 0px;
-
-        }
-        #about .col{
-            display: flex;
-            flex-flow: column wrap;
-
-        }
-        #about .about-me img{
-            width: 100%;
-        }
-        #about .about-contant{
-            width: 100%;
-            padding:auto 0px;
-            margin: auto 0px;
-
-        }
-        
-
+    }
+    #services .row{
+    display: flex;
+    flex-flow: column wrap;
+    }
+    #services .boxes .boxes-models{
+    width: 100%;
+    padding:auto 0px;
+    margin: auto 0px;
+    }
+    #our-works .my-profile{
+    display: flex;
+    flex-flow: column wrap;
+    }
+    #our-works .box{
+    width: 100%;
+    padding:auto 0px;
+    margin: auto 0px;
+    }
+    #blog .row{
+    display: flex;
+    flex-flow: column wrap;
+    }
+    #blog .col{
+    width: 100%;
+    padding:auto 0px;
+    margin: auto 0px;
+    }
+    #contact .row{
+    display: flex;
+    flex-flow: column wrap;
+    }
+    #contact .contact-box{
+    width: 100%;
+    padding:auto 0px;
+    margin: auto 0px;
+    }
+    #about .col{
+    display: flex;
+    flex-flow: column wrap;
+    }
+    #about .about-me img{
+    width: 100%;
+    }
+    #about .about-contant{
+    width: 100%;
+    padding:auto 0px;
+    margin: auto 0px;
+    }
+    #contact form{
+    display: flex;
+    flex-flow: column wrap;
+    }
+    #contact form input{
+    width: 100%;
+    padding:auto 0px;
+    margin: auto 0px;
+    }
 }
